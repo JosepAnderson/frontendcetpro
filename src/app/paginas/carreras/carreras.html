@@ -44,7 +44,7 @@
         <h2>{{ programa.nombre }}</h2>
         <p>{{ programa.texto }}</p>
         <div class="card-foot">
-          <b>Sede Huamanga</b><a routerLink="/matricula">Ver información →</a>
+          <b>Sede Huamanga</b><a [routerLink]="rutaPrograma(programa)">Ver información →</a>
         </div>
       </article>
     }
@@ -63,7 +63,4 @@
     ▣ <b>Inserción y Emprendimiento</b><small>Orientación para crear tu propio negocio.</small>
   </div>
 </section>
-<footer>
-  ✺ CETPRO La Libertad · Formando líderes del mañana
-  <span>Enlaces rápidos · Contacto institucional · Atención y ubicación</span>
-</footer>
+<app-footer />

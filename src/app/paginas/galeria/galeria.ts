@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { Footer } from '../../componentes/footer/footer';
 interface Taller {
   nombre: string;
   categoria: string;
@@ -8,7 +9,7 @@ interface Taller {
 }
 @Component({
   selector: 'app-galeria',
-  imports: [RouterLink],
+  imports: [RouterLink, Footer],
   templateUrl: './galeria.html',
   styleUrl: './galeria.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

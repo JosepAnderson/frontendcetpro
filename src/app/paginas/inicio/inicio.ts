@@ -1,9 +1,10 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { Footer } from '../../componentes/footer/footer';
 
 @Component({
   selector: 'app-inicio',
-  imports: [RouterLink],
+  imports: [RouterLink, Footer],
   templateUrl: './inicio.html',
   styleUrl: './inicio.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

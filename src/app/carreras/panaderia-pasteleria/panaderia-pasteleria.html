@@ -1,0 +1,60 @@
+<header class="nav">
+  <a routerLink="/inicio" class="brand"
+    >✺ <b>CETPRO La Libertad<small>AYACUCHO · EDUCACIÓN TÉCNICA</small></b></a
+  >
+  <nav>
+    <a routerLink="/inicio">Inicio</a><a routerLink="/nosotros">Nosotros</a
+    ><a routerLink="/carreras" class="active">Carreras</a><a routerLink="/galeria">Galería</a
+    ><a routerLink="/matricula">Matrícula</a>
+  </nav>
+  <a routerLink="/iniciarsesion" class="login">Iniciar sesión</a>
+</header>
+<div class="trail">
+  <div class="wrap">
+    <span>Inicio › Carreras Técnicas › {{ nombre }}</span
+    ><a routerLink="/carreras">← Volver al catálogo de carreras</a>
+  </div>
+</div>
+<main class="wrap detail">
+  <section class="intro">
+    <div>
+      <span class="label">{{ etiqueta }}</span>
+      <h1>{{ nombre }}</h1>
+      <p>{{ descripcion }}</p>
+      <div class="meta">
+        <span>◉ Certificación oficial</span><span>◷ Duración: 2 semestres</span
+        ><span>⌖ Sede Huamanga</span>
+      </div>
+    </div>
+    <img
+      [src]="'https://images.unsplash.com/' + imagen + '?auto=format&fit=crop&w=1200&q=85'"
+      [alt]="nombre"
+    />
+  </section>
+  <section>
+    <h2>◉ ¿Qué vas a aprender?</h2>
+    <div class="grid">
+      @for (item of aprendizajes; track item) {
+        <article>
+          ◉ <span>{{ item }}</span>
+        </article>
+      }
+    </div>
+  </section>
+  <section>
+    <h2>▣ Mercado Laboral</h2>
+    <p class="intro-text">Al culminar tu formación estarás calificado para desempeñarte en:</p>
+    <div class="market">
+      @for (item of salidas; track item) {
+        <span>▦ {{ item }}</span>
+      }
+    </div>
+  </section>
+  <div class="actions">
+    <a routerLink="/matricula" class="primary">♙ Solicitar Matrícula</a
+    ><a href="https://wa.me/51908911594" target="_blank" rel="noopener" class="secondary"
+      >▣ Consultar por WhatsApp</a
+    >
+  </div>
+</main>
+<app-footer />

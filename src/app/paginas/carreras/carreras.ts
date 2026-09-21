@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { Footer } from '../../componentes/footer/footer';
 interface Programa {
   nombre: string;
   categoria: string;
@@ -8,13 +9,25 @@ interface Programa {
 }
 @Component({
   selector: 'app-carreras',
-  imports: [RouterLink],
+  imports: [RouterLink, Footer],
   templateUrl: './carreras.html',
   styleUrl: './carreras.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Carreras {
   readonly filtro = signal('Todas');
+  readonly rutas = [
+    'sistemas-electronicos',
+    'plataformas-ti',
+    'peluqueria-barberia',
+    'cuidados-nino-adulto',
+    'cocina-gastronomia',
+    'corte-ensamblaje-textil',
+    'estilismo-avanzado',
+    'panaderia-pasteleria',
+    'pasteleria-fina',
+    'auxiliar-administrativo',
+  ];
   readonly categorias = [
     'Todas',
     'Tecnología',
@@ -93,6 +106,10 @@ export class Carreras {
     this.filtro() === 'Todas'
       ? this.programas
       : this.programas.filter((p) => p.categoria === this.filtro());
+  rutaPrograma(programa: Programa) {
+    return ['/carreras', this.rutas[this.programas.indexOf(programa)]];
+  }
+
   seleccionar(categoria: string) {
     this.filtro.set(categoria);
   }
