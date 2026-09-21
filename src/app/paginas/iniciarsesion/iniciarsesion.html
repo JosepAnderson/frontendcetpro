@@ -1,1 +1,44 @@
-<main><div class="top"><a routerLink="/inicio">← Volver al sitio web principal</a><span>● Portal Seguro SSL</span></div><section class="login-card"><header><div class="seal">✺</div><h1>CETPRO La Libertad – Ayacucho</h1><p>Portal de Acceso Institucional · Docentes y Estudiantes</p></header><form (ngSubmit)="ingresar()"><label>Usuario o Correo Institucional<input name="usuario" [(ngModel)]="usuario" placeholder="ejemplo@cetprolibertad.edu.pe o DNI"></label><label>Contraseña <a href="#ayuda">¿Olvidaste tu contraseña?</a><div class="password"><input name="contrasena" [type]="mostrar()?'text':'password'" [(ngModel)]="contrasena" placeholder="••••••••••••"><button type="button" (click)="mostrar.set(!mostrar())" aria-label="Mostrar contraseña">◉</button></div></label><label class="remember"><input type="checkbox"> Recordar mi sesión</label>@if(error()){<p class="error">Ingresa tu usuario y contraseña para continuar.</p>}<button class="submit">Ingresar ↪</button></form><div class="integrated"><span>SISTEMA INTEGRADO</span><p>♧ Plataforma oficial integrada con Google Workspace para la comunidad educativa de Huamanga.</p></div><div class="contact"><span>♧ Soporte Técnico</span><span>⌖ Alto Perú 285, Ayacucho</span></div><footer>© 2025 CETPRO La Libertad · 50+ Años de Excelencia Técnica</footer></section></main>
+<main>
+  <div class="top">
+    <a routerLink="/inicio">← Volver al sitio web principal</a><span>● Portal Seguro SSL</span>
+  </div>
+  <section class="login-card">
+    <header>
+      <div class="seal">✺</div>
+      <h1>CETPRO La Libertad – Ayacucho</h1>
+      <p>Portal de Acceso Institucional · Docentes y Estudiantes</p>
+    </header>
+    <form (ngSubmit)="ingresar()">
+      <label
+        >Usuario o Correo Institucional<input
+          name="usuario"
+          [(ngModel)]="usuario"
+          placeholder="ejemplo@cetprolibertad.edu.pe o DNI" /></label
+      ><label
+        >Contraseña <a href="#ayuda">¿Olvidaste tu contraseña?</a>
+        <div class="password">
+          <input
+            name="contrasena"
+            [type]="mostrar() ? 'text' : 'password'"
+            [(ngModel)]="contrasena"
+            placeholder="••••••••••••"
+          /><button type="button" (click)="mostrar.set(!mostrar())" aria-label="Mostrar contraseña">
+            ◉
+          </button>
+        </div></label
+      ><label class="remember"><input type="checkbox" /> Recordar mi sesión</label>
+      @if (error()) {
+        <p class="error">Ingresa tu usuario y contraseña para continuar.</p>
+      }
+      <button class="submit">Ingresar ↪</button>
+    </form>
+    <div class="integrated">
+      <span>SISTEMA INTEGRADO</span>
+      <p>
+        ♧ Plataforma oficial integrada con Google Workspace para la comunidad educativa de Huamanga.
+      </p>
+    </div>
+    <div class="contact"><span>♧ Soporte Técnico</span><span>⌖ Alto Perú 285, Ayacucho</span></div>
+    <footer>© 2025 CETPRO La Libertad · 50+ Años de Excelencia Técnica</footer>
+  </section>
+</main>

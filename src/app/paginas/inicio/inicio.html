@@ -1,8 +1,119 @@
-<header class="nav"><a routerLink="/inicio" class="brand"><span class="seal">✺</span><span><b>CETPRO La Libertad</b><small>AYACUCHO · EDUCACIÓN TÉCNICA</small></span></a><nav><a routerLink="/inicio" class="active">Inicio</a><a routerLink="/nosotros">Nosotros</a><a routerLink="/carreras">Carreras</a><a routerLink="/galeria">Galería</a><a routerLink="/matricula">Matrícula</a></nav><a routerLink="/iniciarsesion" class="login">Iniciar sesión</a></header>
+<header class="nav">
+  <a routerLink="/inicio" class="brand"
+    ><span class="seal">✺</span
+    ><span><b>CETPRO La Libertad</b><small>AYACUCHO · EDUCACIÓN TÉCNICA</small></span></a
+  >
+  <nav>
+    <a routerLink="/inicio" class="active">Inicio</a><a routerLink="/nosotros">Nosotros</a
+    ><a routerLink="/carreras">Carreras</a><a routerLink="/galeria">Galería</a
+    ><a routerLink="/matricula">Matrícula</a>
+  </nav>
+  <a routerLink="/iniciarsesion" class="login">Iniciar sesión</a>
+</header>
 <main>
-<section class="hero"><div><span class="eyebrow">CENTRO DE EDUCACIÓN TÉCNICO PRODUCTIVA LICENCIADO</span><h1>Da el primer paso.<br><em>Tu futuro profesional</em><br>empieza aquí.</h1><p>Más de 50 años formando líderes técnicos, especialistas competitivos y emprendedores de alto impacto para el motor productivo de la región Ayacucho.</p><a routerLink="/matricula" class="button gold">Solicitar matrícula ↗</a><div class="hero-meta"><span>✦ Título a Nombre de la Nación</span><span>◷ Turnos Mañana y Noche</span></div></div><div class="hero-photo"><img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80" alt="Estudiantes aprendiendo en un taller"><div class="photo-tag">▣ ADMISIÓN 2026<br><b>Módulo Regular</b></div></div></section>
-<section class="stats"><div><b>50+</b><span>AÑOS DE TRAYECTORIA<br>Liderazgo técnico en Huamanga</span></div><div><b>10+</b><span>CARRERAS Y MÓDULOS<br>Alta demanda laboral</span></div><div><b>1000+</b><span>EGRESADOS EN LA REGIÓN<br>Emprendedores y técnicos</span></div><div><b>100%</b><span>FORMACIÓN PRÁCTICA<br>Talleres y laboratorios reales</span></div></section>
-<section class="about wrap"><div><span class="eyebrow">IDENTIDAD Y MISIÓN</span><h2>Sobre Nosotros</h2><p>Somos un CETPRO oficialmente Licenciado que contribuye a que los estudiantes de Ayacucho desarrollen al máximo su potencial de formación técnica y emprendimiento.</p></div><div class="credential"><b>✦ ACREDITACIÓN PÚBLICA</b><strong>R.D. Institucional Vigente</strong><small>Garantizamos planes formativos alineados con el Catálogo Nacional de Oferta Formativa.</small></div></section>
-<section class="programs"><div class="wrap section-head"><div><span class="eyebrow">OFERTA TÉCNICO-PRODUCTIVA</span><h2>Programas de Estudio<br>Destacados</h2></div><a routerLink="/carreras" class="button dark">Ver todas las especialidades →</a></div><div class="program-grid wrap">@for (programa of programas; track programa; let i = $index) {<article><span class="icon">{{ ['▣','♨','♧','✂','◌','⌘','▤','♡'][i] }}</span><small>{{ ['TECNOLOGÍA','GASTRONOMÍA','ALIMENTOS','CUIDADO PERSONAL','COSMETOLOGÍA','ELECTRÓNICA','GESTIÓN','SALUD'][i] }}</small><h3>{{ programa }}</h3><p>Formación práctica con docentes especializados y herramientas profesionales.</p><a routerLink="/carreras">Ver detalle →</a></article>}</div></section>
-<section class="cta"><span class="eyebrow">MATRÍCULA ABIERTA · HUAMANGA</span><h2>¡Inscríbete Hoy! No dejes pasar<br>la oportunidad de transformar tu futuro laboral</h2><p>Educación técnica pública, licenciada y con validez oficial para responder a los desafíos productivos del Perú.</p><a routerLink="/matricula" class="button gold">Inscribirme Ahora ↗</a></section>
-</main><footer><b>✺ CETPRO La Libertad</b><span>Formando líderes del mañana con valores, conocimiento y habilidades para la vida.</span><div><b>ENLACES RÁPIDOS</b><a routerLink="/nosotros">Nosotros</a><a routerLink="/carreras">Carreras</a><a routerLink="/galeria">Galería</a></div><div><b>CONTACTO INSTITUCIONAL</b><span>⌖ Alto Perú 285, Ayacucho</span><span>☎ 908911594</span><span>◉ cetprolalibertad.edu.pe</span></div><small>© 2025 CETPRO La Libertad. Todos los derechos reservados.</small></footer>
+  <section class="hero">
+    <div>
+      <span class="eyebrow">CENTRO DE EDUCACIÓN TÉCNICO PRODUCTIVA LICENCIADO</span>
+      <h1>Da el primer paso.<br /><em>Tu futuro profesional</em><br />empieza aquí.</h1>
+      <p>
+        Más de 50 años formando líderes técnicos, especialistas competitivos y emprendedores de alto
+        impacto para el motor productivo de la región Ayacucho.
+      </p>
+      <a routerLink="/matricula" class="button gold">Solicitar matrícula ↗</a>
+      <div class="hero-meta">
+        <span>✦ Título a Nombre de la Nación</span><span>◷ Turnos Mañana y Noche</span>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img
+        src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80"
+        alt="Estudiantes aprendiendo en un taller"
+      />
+      <div class="photo-tag">▣ ADMISIÓN 2026<br /><b>Módulo Regular</b></div>
+    </div>
+  </section>
+  <section class="stats">
+    <div>
+      <b>50+</b><span>AÑOS DE TRAYECTORIA<br />Liderazgo técnico en Huamanga</span>
+    </div>
+    <div>
+      <b>10+</b><span>CARRERAS Y MÓDULOS<br />Alta demanda laboral</span>
+    </div>
+    <div>
+      <b>1000+</b><span>EGRESADOS EN LA REGIÓN<br />Emprendedores y técnicos</span>
+    </div>
+    <div>
+      <b>100%</b><span>FORMACIÓN PRÁCTICA<br />Talleres y laboratorios reales</span>
+    </div>
+  </section>
+  <section class="about wrap">
+    <div>
+      <span class="eyebrow">IDENTIDAD Y MISIÓN</span>
+      <h2>Sobre Nosotros</h2>
+      <p>
+        Somos un CETPRO oficialmente Licenciado que contribuye a que los estudiantes de Ayacucho
+        desarrollen al máximo su potencial de formación técnica y emprendimiento.
+      </p>
+    </div>
+    <div class="credential">
+      <b>✦ ACREDITACIÓN PÚBLICA</b><strong>R.D. Institucional Vigente</strong
+      ><small
+        >Garantizamos planes formativos alineados con el Catálogo Nacional de Oferta
+        Formativa.</small
+      >
+    </div>
+  </section>
+  <section class="programs">
+    <div class="wrap section-head">
+      <div>
+        <span class="eyebrow">OFERTA TÉCNICO-PRODUCTIVA</span>
+        <h2>Programas de Estudio<br />Destacados</h2>
+      </div>
+      <a routerLink="/carreras" class="button dark">Ver todas las especialidades →</a>
+    </div>
+    <div class="program-grid wrap">
+      @for (programa of programas; track programa; let i = $index) {
+        <article>
+          <span class="icon">{{ ['▣', '♨', '♧', '✂', '◌', '⌘', '▤', '♡'][i] }}</span
+          ><small>{{
+            [
+              'TECNOLOGÍA',
+              'GASTRONOMÍA',
+              'ALIMENTOS',
+              'CUIDADO PERSONAL',
+              'COSMETOLOGÍA',
+              'ELECTRÓNICA',
+              'GESTIÓN',
+              'SALUD',
+            ][i]
+          }}</small>
+          <h3>{{ programa }}</h3>
+          <p>Formación práctica con docentes especializados y herramientas profesionales.</p>
+          <a routerLink="/carreras">Ver detalle →</a>
+        </article>
+      }
+    </div>
+  </section>
+  <section class="cta">
+    <span class="eyebrow">MATRÍCULA ABIERTA · HUAMANGA</span>
+    <h2>¡Inscríbete Hoy! No dejes pasar<br />la oportunidad de transformar tu futuro laboral</h2>
+    <p>
+      Educación técnica pública, licenciada y con validez oficial para responder a los desafíos
+      productivos del Perú.
+    </p>
+    <a routerLink="/matricula" class="button gold">Inscribirme Ahora ↗</a>
+  </section>
+</main>
+<footer>
+  <b>✺ CETPRO La Libertad</b
+  ><span>Formando líderes del mañana con valores, conocimiento y habilidades para la vida.</span>
+  <div>
+    <b>ENLACES RÁPIDOS</b><a routerLink="/nosotros">Nosotros</a
+    ><a routerLink="/carreras">Carreras</a><a routerLink="/galeria">Galería</a>
+  </div>
+  <div>
+    <b>CONTACTO INSTITUCIONAL</b><span>⌖ Alto Perú 285, Ayacucho</span><span>☎ 908911594</span
+    ><span>◉ cetprolalibertad.edu.pe</span>
+  </div>
+  <small>© 2025 CETPRO La Libertad. Todos los derechos reservados.</small>
+</footer>
