@@ -40,6 +40,10 @@
   text-align: center;
   padding: 25px;
 }
+.login-card header .logo-image {
+  display: block;
+  margin: 0 auto;
+}
 .seal {
   background: #fff;
   color: #a48816;
